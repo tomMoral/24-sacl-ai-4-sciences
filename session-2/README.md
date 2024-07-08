@@ -1,6 +1,37 @@
 # Sacl-AI 2024
 
+## Structure of the repository
+
+A pure python file with `jupytext` markers are available in `python_files` directory.
+We converted these files to `ipynb` files using `jupytext` and saved them in the
+`notebooks` directory.
+
+Similarly, we provide the corrections of the python files and notebooks in the
+`python_files_corrections` and `notebooks_corrections` directories respectively.
+
 ## Getting started
+
+### Using Google Colab
+
+You can open any of the notebooks in Google Colab: https://colab.research.google.com/
+
+Once the notebook imported, you will need to install/update two libraries using the
+following commands:
+
+```bash
+!pip install -q -U scikit-learn skrub
+```
+
+Another change to be done in the notebook is to replace the link to the data file
+and provide the URI of the data from the GitHub repository.
+
+Basically, the changes are:
+
+Replace `../datasets/penguins_regression.csv` with the following URI:
+`https://raw.githubusercontent.com/tomMoral/24-sacl-ai-4-sciences/main/session-2/datasets/penguins_regression.csv`
+
+Replace `../datasets/penguins.csv` with the following URI:
+`https://raw.githubusercontent.com/tomMoral/24-sacl-ai-4-sciences/main/session-2/datasets/penguins.csv`
 
 ### Using `pixi`
 
@@ -47,12 +78,3 @@ packages using `pip`:
 pip install -r requirements.txt
 jupyter notebook  # or jupyter lab
 ```
-
-## Structure of the repository
-
-A pure python file with `jupytext` markers are available in `python_files` directory.
-We converted these files to `ipynb` files using `jupytext` and saved them in the
-`notebooks` directory.
-
-Similarly, we provide the corrections of the python files and notebooks in the
-`python_files_corrections` and `notebooks_corrections` directories respectively.
