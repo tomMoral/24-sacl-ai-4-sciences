@@ -1,0 +1,12 @@
+name: sacl-ai
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - scikit-learn=1.5.*
+  - pandas
+  - matplotlib
+  - skrub=0.2.*

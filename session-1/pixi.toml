@@ -1,0 +1,20 @@
+[project]
+name = "sacl-ai-2024"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Guillaume Lemaitre <guillaume@probabl.ai>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
+
+[tasks]
+
+[dependencies]
+python = ">=3.12.4,<3.13"
+jupyterlab = ">=4.2.3,<4.3"
+notebook = ">=7.2.1,<7.3"
+pixi-kernel = ">=0.3.0,<0.4"
+ipykernel = ">=6.29.5,<6.30"
+scikit-learn = "1.5"
+pandas = "*"
+matplotlib = "*"
+skrub = "0.2"
